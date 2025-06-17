@@ -1,0 +1,29 @@
+@use 'variable' as var;
+
+.header {
+  height: 100px;
+  width: 400px;
+  background-color: var.$navy;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  height: 250px;
+  width: 150px;
+  background-color: var.$green;
+}
+
+.main {
+  height: 250px;
+  width: 250px;
+  background-color: var.$red;
+}
+
+.footer {
+  height: 100px;
+  width: 400px;
+  background-color: var.$brown;
+}
