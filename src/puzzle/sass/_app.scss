@@ -37,7 +37,23 @@ main {
 .main {
   height: 250px;
   width: 250px;
+  padding: 45px;
+  box-sizing: border-box;
   background-color: var.$red;
+  display: flex;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__item {
+      height: 40px;
+      width: 140px;
+      border: none;
+      outline: 5px solid var.$white;
+    }
+  }
 }
 
 .footer {
