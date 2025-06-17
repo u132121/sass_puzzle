@@ -1,0 +1,8 @@
+.vscode/
+node_modules/
+dist/
+src/practice/
+/.env
+/README.md
+/vite.config.js
+*.json
