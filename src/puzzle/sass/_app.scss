@@ -3,7 +3,27 @@
 .header {
   height: 100px;
   width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
   background-color: var.$navy;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__container {
+    display: flex;
+    gap: 10px;
+    border: 10px solid var.$white;
+    background-color: var.$white;
+
+    &__item {
+      height: 40px;
+      width: 40px;
+      border: none;
+      background-color: var.$red;
+    }
+  }
 }
 
 main {
