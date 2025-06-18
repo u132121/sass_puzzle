@@ -29,7 +29,7 @@ main {
   @include mix.background(250px, 150px, var.$green);
 }
 
-.main {
+.content {
   @include mix.background(250px, 250px, var.$red);
   padding: 45px;
   box-sizing: border-box;
