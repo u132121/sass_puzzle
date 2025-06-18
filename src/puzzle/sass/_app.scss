@@ -16,9 +16,7 @@
     background-color: var.$white;
 
     &__item {
-      height: 40px;
-      width: 40px;
-      border: none;
+      @include mix.btnSize(40px);
     }
   }
 }
@@ -43,9 +41,7 @@ main {
     gap: 20px;
 
     &__item {
-      height: 40px;
-      width: 140px;
-      border: none;
+      @include mix.btnSize(140px);
       outline: 5px solid var.$white;
     }
   }
