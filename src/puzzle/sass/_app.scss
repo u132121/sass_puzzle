@@ -1,11 +1,10 @@
 @use 'variable' as var;
+@use 'mixin' as mix;
 
 .header {
-  height: 100px;
-  width: 400px;
+  @include mix.background(100px, 400px, var.$navy);
   padding: 20px;
   box-sizing: border-box;
-  background-color: var.$navy;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -29,17 +28,13 @@ main {
 }
 
 .sidebar {
-  height: 250px;
-  width: 150px;
-  background-color: var.$green;
+  @include mix.background(250px, 150px, var.$green);
 }
 
 .main {
-  height: 250px;
-  width: 250px;
+  @include mix.background(250px, 250px, var.$red);
   padding: 45px;
   box-sizing: border-box;
-  background-color: var.$red;
   display: flex;
 
   &__container {
@@ -57,9 +52,7 @@ main {
 }
 
 .footer {
-  height: 100px;
-  width: 400px;
-  background-color: var.$brown;
+  @include mix.background(100px, 400px, var.$brown);
 }
 
 @each $index in var.$classNames {
