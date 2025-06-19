@@ -1,0 +1,11 @@
+@mixin background($height, $width, $color) {
+  height: $height;
+  width: $width;
+  background-color: $color;
+}
+
+@mixin btnSize($width) {
+  height: 40px;
+  width: $width;
+  border: none;
+}
