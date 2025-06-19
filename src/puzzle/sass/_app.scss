@@ -15,6 +15,13 @@
     border: 10px solid var.$white;
     background-color: var.$white;
 
+    @each $index in var.$classNames {
+      $index_key: index(var.$classNames, $index);
+
+      .#{$index} {
+        background-color: nth(var.$buttonColor, $index_key);
+      }
+    }
     &__item {
       @include mix.btnSize(40px);
     }
@@ -40,6 +47,14 @@ main {
     flex-direction: column;
     gap: 20px;
 
+    @each $index in var.$classNames {
+      $index_key: index(var.$classNames, $index);
+
+      .#{$index} {
+        background-color: nth(var.$buttonColor, $index_key);
+      }
+    }
+
     &__item {
       @include mix.btnSize(140px);
       outline: 5px solid var.$white;
@@ -49,12 +64,4 @@ main {
 
 .footer {
   @include mix.background(100px, 400px, var.$brown);
-}
-
-@each $index in var.$classNames {
-  $index_key: index(var.$classNames, $index);
-
-  .#{$index} {
-    background-color: nth(var.$buttonColor, $index_key);
-  }
 }
